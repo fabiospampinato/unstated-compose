@@ -118,7 +118,7 @@ render (
 );
 ```
 
-## Related:
+## Related
 
 - **[unstated-with-containers](https://github.com/fabiospampinato/unstated-with-containers)**: Higher-Order Component for providing unstated containers to a component.
 
