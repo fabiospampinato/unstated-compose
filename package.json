@@ -32,9 +32,6 @@
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^10.9.4",
-    "ava": "^0.18.2",
-    "ava-spec": "^1.1.0",
-    "nyc": "^10.1.2",
     "rimraf": "^2.6.0",
     "tslint": "^4.4.2",
     "typescript": "^3.0.3",

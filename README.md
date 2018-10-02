@@ -1,8 +1,8 @@
-# Unstated - compose
+# Unstated Compose
 
 Compose multiple containers into one.
 
-This is useful when you want to have a single container, perhaps subscribed to via [unstated-with-containers](https://github.com/fabiospampinato/unstated-with-containers), but it starts to become too big. This package allows you to refactor it into multiple separate containers that can still be merged back together.
+This is useful when you want to have a single container, perhaps subscribed to via [unstated-connect2](https://github.com/fabiospampinato/unstated-connect2), but it starts to become too big. This package allows you to refactor it into multiple separate containers that can still be merged back together.
 
 ## Install
 
@@ -14,7 +14,7 @@ npm install --save unstated-compose
 
 It allows to write an app like the following, where there are multiple containers, which can access each other's methods and state, while your components still consume only 1 container.
 
-```ts
+```tsx
 /* IMPORT */
 
 import * as React from 'react';
@@ -120,10 +120,13 @@ render (
 
 ## Related
 
-- **[unstated-with-containers](https://github.com/fabiospampinato/unstated-with-containers)**: Higher-Order Component for providing unstated containers to a component.
-- **[unstated-connect2](https://github.com/fabiospampinato/unstated-connect2)**: Easily connect your containers to components, without sacrificing performance.
-- **[unstated-suspense](https://github.com/fabiospampinato/unstated-suspense)**: Unstated container with support for suspending/unsuspending updates propagation.
-- **[unstated-compose-suspense](https://github.com/fabiospampinato/unstated-compose-suspense)**: unstated-compose containers with support for suspending/unsuspending updates propagation.
+- **[unstated-with-containers](https://github.com/fabiospampinato/unstated-with-containers)**: Higher-Order Component for subscribing to containers.
+- **[unstated-connect2](https://github.com/fabiospampinato/unstated-connect2)**: Connect containers to components, without sacrificing performance.
+- **[unstated-hmr](https://github.com/fabiospampinato/unstated-hmr)**: Preserve containers' states across Hot-Module-Replacements.
+- **[unstated-compose-suspense](https://github.com/fabiospampinato/unstated-compose-suspense)**: Add suspend/unsuspend support to `unstated-compose`.
+- **[unstated-compose-suspense-middleware](https://github.com/fabiospampinato/unstated-compose-suspense-middleware)**: Add middlewares support to `unstated-compose-suspense`.
+- **[unstated-suspense](https://github.com/fabiospampinato/unstated-suspense)**: Suspend/unsuspend updates propagation from your containers.
+- **[unstated-suspense-middleware](https://github.com/fabiospampinato/unstated-suspense-middleware)**: Add middlewares support to `unstated-suspense`.
 
 ## License
 
