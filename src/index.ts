@@ -63,5 +63,4 @@ function compose ( containers: object ) {
 
 /* EXPORT */
 
-export {compose, ChildContainer, ParentContainer};
-export default compose;
+export = Object.assign ( compose, { default: compose, ChildContainer, ParentContainer } );
