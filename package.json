@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "clean": "rimraf dist",
-    "compile": "tsc --skipLibCheck",
+    "compile": "tsc --skipLibCheck && tstei",
     "compile:watch": "tsc --skipLibCheck --watch",
     "prepublishOnly": "npm run clean && npm run compile"
   },
@@ -33,6 +33,7 @@
     "@types/node": "^10.9.4",
     "rimraf": "^2.6.0",
     "typescript": "^3.0.3",
+    "typescript-transform-export-interop": "^1.0.1",
     "unstated": "^2.1.1"
   },
   "peerDependencies": {
