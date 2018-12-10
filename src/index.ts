@@ -18,13 +18,13 @@ class ParentContainer<Context extends object, State extends object> extends Cont
 
 function compose ( containers: object ) {
 
-  return function ( MainContainer = ParentContainer as any ) {
+  return function ( MainContainer ) {
 
     return class ComposedContainer extends MainContainer {
 
-      constructor ( ...args ) {
+      constructor () {
 
-        super ( ...args );
+        super ();
 
         this.state = {};
         this.ctx = {};
@@ -57,7 +57,7 @@ function compose ( containers: object ) {
 
     } as any;
 
-  }
+  };
 
 }
 
