@@ -63,6 +63,6 @@ function compose ( containers: object ) {
 
 /* EXPORT */
 
-const exp = Object.assign ( compose, { ChildContainer, ParentContainer } );
+const exp = Object.assign ( compose, { compose, ChildContainer, ParentContainer } );
 
 export default exp;
