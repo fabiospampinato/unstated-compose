@@ -20,7 +20,7 @@ It allows to write an app like the following, where there are multiple container
 import * as React from 'react';
 import {render} from 'react-dom';
 import {Provider, Subscribe} from 'unstated';
-import {compose, ChildContainer, ParentContainer} from './compose';
+import {compose, ChildContainer, ParentContainer} from 'unstated-compose';
 
 /* CONTAINERS */
 
